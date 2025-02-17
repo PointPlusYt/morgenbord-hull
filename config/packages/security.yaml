@@ -2,13 +2,11 @@ security:
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
-        Morgenbord\CoreBundle\Entity\User:
-            algorithm: auto
 
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
         # used to reload user from session & other features (e.g. switch_user)
-        app_user_provider:
+        morgenbord_user_provider:
             entity:
                 class: Morgenbord\CoreBundle\Entity\User
                 property: username
@@ -18,8 +16,9 @@ security:
             security: false
         main:
             lazy: true
-            provider: app_user_provider
-            custom_authenticator: Morgenbord\CoreBundle\Security\LoginFormAuthenticator
+            provider: morgenbord_user_provider
+            custom_authenticators:
+                - Morgenbord\CoreBundle\Security\LoginFormAuthenticator
             logout:
                 path: morgenbord_logout
                 # where to redirect after logout
