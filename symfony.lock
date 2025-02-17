@@ -38,6 +38,9 @@
             "migrations/.gitignore"
         ]
     },
+    "morgenbord/checklist-widget-bundle": {
+        "version": "v0.1"
+    },
     "morgenbord/core-bundle": {
         "version": "dev-main"
     },
