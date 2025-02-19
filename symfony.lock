@@ -39,7 +39,7 @@
         ]
     },
     "morgenbord/checklist-widget-bundle": {
-        "version": "v0.1"
+        "version": "9999999-dev"
     },
     "morgenbord/core-bundle": {
         "version": "dev-main"

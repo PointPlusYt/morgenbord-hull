@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4722f854cc1c3aedf3c1f6e27556a17e",
+    "content-hash": "36e9bec38cb2649cfb2ea7dddc4b2f5e",
     "packages": [
         {
             "name": "composer/semver",
@@ -1642,16 +1642,16 @@
         },
         {
             "name": "morgenbord/checklist-widget-bundle",
-            "version": "v0.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PointPlusYt/morgenbord-checklist-widget-bundle.git",
-                "reference": "bcd00a01cb29b3bf8720b0b171ecd0fc25e17794"
+                "reference": "a92dc32955a8abcbcc2fe836205cf7bf9baebc63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PointPlusYt/morgenbord-checklist-widget-bundle/zipball/bcd00a01cb29b3bf8720b0b171ecd0fc25e17794",
-                "reference": "bcd00a01cb29b3bf8720b0b171ecd0fc25e17794",
+                "url": "https://api.github.com/repos/PointPlusYt/morgenbord-checklist-widget-bundle/zipball/a92dc32955a8abcbcc2fe836205cf7bf9baebc63",
+                "reference": "a92dc32955a8abcbcc2fe836205cf7bf9baebc63",
                 "shasum": ""
             },
             "require": {
@@ -1660,15 +1660,16 @@
             "require-dev": {
                 "phpunit/phpunit": "*"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "MorgenBord\\ChecklistWidgetBundle\\": "src/"
+                    "Morgenbord\\ChecklistWidgetBundle\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "AGPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -1676,12 +1677,12 @@
                     "email": "point@plus.yt"
                 }
             ],
-            "description": "Widget that creates checklists for MorgenBord",
+            "description": "Widget that creates checklists for Morgenbord",
             "support": {
                 "issues": "https://github.com/PointPlusYt/morgenbord-checklist-widget-bundle/issues",
-                "source": "https://github.com/PointPlusYt/morgenbord-checklist-widget-bundle/tree/v0.1"
+                "source": "https://github.com/PointPlusYt/morgenbord-checklist-widget-bundle/tree/main"
             },
-            "time": "2022-02-19T15:08:30+00:00"
+            "time": "2025-02-17T20:41:41+00:00"
         },
         {
             "name": "morgenbord/core-bundle",
@@ -10160,6 +10161,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "morgenbord/checklist-widget-bundle": 20,
         "morgenbord/core-bundle": 20
     },
     "prefer-stable": true,
