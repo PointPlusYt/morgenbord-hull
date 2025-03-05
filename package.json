@@ -24,7 +24,7 @@
         "webpack-cli": "^5.1.0",
         "webpack-notifier": "^1.15.0"
     },
-    "license": "UNLICENSED",
+    "license": "AGPL-3.0-or-later",
     "private": true,
     "scripts": {
         "dev-server": "bin/console assets:install assets && encore dev-server",
